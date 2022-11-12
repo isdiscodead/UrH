@@ -44,7 +44,7 @@ function addAnswer(andswerText, qIdx, idx){
             }
             goNext(++qIdx);
         },450)
-        console.log(character)
+        console.log(character);
     },false)
 }
 
@@ -59,7 +59,7 @@ function calResult(){
     var HackerPer = character[2]/sum *100;
     var max_index = 0;
     for(i = 1;i<3;i++){
-        if(character[i]<character[max_index]){
+        if(character[i]>character[max_index]){
             max_index=i;
         }
         
@@ -70,6 +70,7 @@ function calResult(){
 }
 function setResult(){
     let point = calResult();
+    console.log(point);
     
     const resultNameIntro = document.querySelector('.resultIntro');
     resultNameIntro.innerHTML = infoList[point].nameIntro; 
@@ -156,11 +157,4 @@ function start(){
         let qIdx = 0;
         goNext(qIdx);
     },450);
-}
-
-function showAbout3H(abouht3H){
-    const context = document.querySelector('#about3H');
-    
-    
-    
 }
