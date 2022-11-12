@@ -44,6 +44,7 @@ function addAnswer(andswerText, qIdx, idx){
             }
             goNext(++qIdx);
         },450)
+        console.log(character)
     },false)
 }
 
@@ -85,15 +86,15 @@ function setResult(){
     // resultImg.classList.add('img-fluid');
     // imgDiv.appendChild(resultImg);
     var sum = character[0]+character[1]+character[2];
-    var HustlerPer = character[0]/sum *100;
-    var HipsterPer = character[1]/sum *100;
-    var HackerPer = character[2]/sum *100;
-    const HusRes = document.querySelector('.title percent0');
-    const HipRes = document.querySelector('.title percent1');
-    const HackRes = document.querySelector('.title percent2');
-    HusRes.innerHTML = HustlerPer +"%";
-    HipRes.innerHTML = HipsterPer +"%";
-    HackRes.innerHTML = HackerrPer +"%";
+    var HustlerPer =  Math.floor( character[0]/sum *100 );
+    var HipsterPer =  Math.floor( character[1]/sum *100 );
+    var HackerPer = Math.floor( character[2]/sum *100 );
+    const HusRes = document.querySelector('.title.percent0');
+    const HipRes = document.querySelector('.title.percent1');
+    const HackRes = document.querySelector('.title.percent2');
+    HusRes.innerHTML = "Hustler: "+HustlerPer +"%";
+    HipRes.innerHTML = "Hipster: "+HipsterPer +"%";
+    HackRes.innerHTML = "Hacker:"+HackerPer +"%";
     
     const resultDesc1 = document.querySelector('.resultDesc1');
     const resultDescTitle1 = document.querySelector('.resultDescTitle1');
