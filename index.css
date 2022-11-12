@@ -1,0 +1,16 @@
+:root,
+:root.yellow {
+  --bg-color: #FFECA8;
+  --text-color: #681A83;
+}
+
+:root.pink {
+  --bg-color: #FFB6B6;
+  --text-color: #475846;
+}
+
+
+:root.blue {
+    --bg-color: #B7CBFF;
+    --text-color: #62473B;
+  }
