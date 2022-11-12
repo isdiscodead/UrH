@@ -10,7 +10,8 @@
 </head>
 <body>
     <!-- Main -->
-    <section>
+
+    <section id = "main">
         <div class="title">
             <h3 class="subtitle">"What's Your H?"</h3>
             <h2>스타트업 팀 빌딩</h2>
@@ -23,18 +24,29 @@
 
                 내가 3H의 각 요소를 몇 퍼센트 정도 포함하고 있는지 알아볼 수 있는 테스트입니다.
             </div>
+
+            <button class="btn" onclick="js:start()">
+                <h2 class="btn-text">Test 하기</h2>
+            </button>
             
             <button class="btn" id="btnKakao" onclick="fn_sendFB('kakaotalk');return false;" target="_self" title="카카오톡 공유">
                 <h2 class="btn-text">팀원과 공유하기</h2>
                 <h3>Share with Team members</h3>
             </button>
 
-            <button class="btn" onclick="js:start()">
+            <button class="btn" onclick="js:showAbout3H()">
                 <h2 class="btn-text">3H 알아보기</h2>
                 <h3>Find out What is 3H</h3>
             </button>
         </article>
+
     </section>
+
+    <section id="about3H">
+        
+        
+    </section>
+    
 
     <!-- Test -->
     <section id="qna">

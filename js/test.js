@@ -1,6 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
+const about = document.querySelector("#about3H");
 
 const endPoint = 20;
 const select = [0,0,0,0];
@@ -78,9 +79,6 @@ function setResult(){
     HusRes.innerHTML = HustlerPer +"%";
     HipRes.innerHTML = HipsterPer +"%";
     HackRes.innerHTML = HackerrPer +"%";
-
-
-
     
     const resultDesc1 = document.querySelector('.resultDesc1');
     const resultDescTitle1 = document.querySelector('.resultDescTitle1');
@@ -142,4 +140,11 @@ function start(){
         let qIdx = 0;
         goNext(qIdx);
     },450);
+}
+
+function showAbout3H(){
+    var context = about.createElement('div');
+    context.innerHTML=abouht3H[0];
+    context.innerHTML=abouht3H[1];
+    context.innerHTML=abouht3H[2];
 }
