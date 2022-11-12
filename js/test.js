@@ -52,7 +52,7 @@ function calResult(){
     var HustlerPer = character[0]/sum *100;
     var HipsterPer = character[1]/sum *100;
     var HackerPer = character[2]/sum *100;
-    var result = select.indexOf(Math.max(...select));
+    var result = select.indexOf(Math.max(character));
     return result; 
 
 }
@@ -142,9 +142,9 @@ function start(){
     },450);
 }
 
-function showAbout3H(){
-    var context = about.createElement('div');
-    context.innerHTML=abouht3H[0];
-    context.innerHTML=abouht3H[1];
-    context.innerHTML=abouht3H[2];
+function showAbout3H(abouht3H){
+    const context = document.querySelector('#about3H');
+    
+    
+    
 }
