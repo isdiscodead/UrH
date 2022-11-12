@@ -261,3 +261,13 @@ footer {
     text-align: left;
     white-space: normal;
 }
+
+.resultDesc2 {
+    margin-bottom: 3rem;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
