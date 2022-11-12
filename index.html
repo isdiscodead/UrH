@@ -26,7 +26,7 @@
             </div>
 
             <button class="btn" onclick="js:start()">
-                <h2 class="btn-text">Test 하기</h2>
+                <h2 class="btn-text">테스트 시작하기</h2>
             </button>
             
             <button class="btn" id="btnKakao" onclick="fn_sendFB('kakaotalk');return false;" target="_self" title="카카오톡 공유">
@@ -103,17 +103,17 @@
     
                 </div>
             <div>
-                <div>
+                <div class="icon-container">
                     <img class="icon" src="./image/hustler.png" alt="hipster-img">
                     <span class="title"></span>
                     <span class="title percent0"></span>
                 </div>
-                <div>
+                <div class="icon-container">
                     <img class="icon" src="./image/hipster.png" alt="hipster-img">
                     <span class="title"></span>
                     <span class="title percent1"></span>
                 </div>
-                <div>
+                <div class="icon-container">
                     <img class="icon" src="./image/hacker.png" alt="hipster-img">
                     <span class="title"></span>
                     <span class="title percent2"></span>
@@ -126,7 +126,7 @@
                     <h3>Share with Team members</h3>
                 </button>
     
-                <button class="btn" id="open_result" onclick="location.replace();">
+                <button class="btn" id="open_result" onclick="window.location.reload();">
                     <h2 class="btn-text">테스트 다시하기</h2>
                     <h3>Retry the Test</h3>
                 </button>
@@ -192,7 +192,7 @@
                     <h3>Share with Team members</h3>
                 </button>
     
-                <button class="btn" id="">
+                <button class="btn" onclick="window.location.reload();">
                     <h2 class="btn-text" id="start-btn">테스트 시작하기</h2>
                     <h3>Try the Test</h3>
                 </button>
