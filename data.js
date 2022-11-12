@@ -404,9 +404,9 @@ const qnaList = [
 ];
 
 const infoList = [
-    {
+    {   
         nameIntro: "유행에 민감하고 예술적인 감각이 뛰어난 당신 이 시대의 진정한 힙스터!",
-        name: "<Hipster>",
+        name: "Hipster",
         descTitle1: "Hipster는 디자인과 서비스를 예쁘게 만들어주는 사람이에요.",
         desc1: "원래 Hipster는 문화적 코드를 공유하는 젊은이라는 의미도 있지만, 스타트업에서는 최신 트렌드를 잘 이해하는 디자이너의 의미가 커요.",
         descTitle2:
@@ -415,7 +415,7 @@ const infoList = [
     },
     {
         nameIntro: "강한 의지로 법칙을 구부리고 깨트리며 결국 변화를 만들어내는 당신 이 시대의 진정한 허슬러!",
-        name: "<Hustler>",
+        name: "Hustler",
         descTitle1:
             "Hustler는 수단과 방법을 가리지 않고 목표한 것을 성취해내는 사람이에요.",
         desc1: "초기 스타트업에서 MVP를 가지고 회사의 꿈과 비전을 말하며 VC 및 고객들을 설득시키는 사람이랍니다.",
@@ -424,7 +424,7 @@ const infoList = [
     },
     {
         nameIntro: "노트북 앞에서 아무말없이 밤새 개발에 몰두하는 당신 이 시대의 진정한 해커!",
-        name: "<Hacker>",
+        name: "Hacker",
         descTitle1: "Hacker는 해결해야하는 범위를 알고 일처리를 빠르게 구현해내는 사람이에요.",
         desc1: "바로 스타트업에서 개발자의 역할이죠! 논리력과 빠른 문제 해결 능력을 가지고 서비스를 구축해낼 뿐 아니라 하나에 빠지면 끝없이 몰두해서 결과를 만들어낸답니다.",
         descTitle2:

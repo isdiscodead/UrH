@@ -5,8 +5,9 @@ const about = document.querySelector("#about3H");
 
 const endPoint = 20;
 const select = [0,0,0,0];
-const character ={Hustler:0, Hipster:0, Hacker:0};
-chara
+const character = [0,0,0];
+//const character ={Hustler:0, Hipster:0, Hacker:0};
+
 
 
 function addAnswer(andswerText, qIdx, idx){
@@ -46,13 +47,23 @@ function addAnswer(andswerText, qIdx, idx){
     },false)
 }
 
+function getKeyByValue(obj, value) {
+    return Object.keys(obj).find(key => obj[key] === value);
+  }
 
 function calResult(){
     var sum = character[0]+character[1]+character[2];
     var HustlerPer = character[0]/sum *100;
     var HipsterPer = character[1]/sum *100;
     var HackerPer = character[2]/sum *100;
-    var result = select.indexOf(Math.max(character));
+    var max_index = 0;
+    for(i = 1;i<3;i++){
+        if(character[i]<character[max_index]){
+            max_index=i;
+        }
+        
+    }
+    var result = max_index;
     return result; 
 
 }
@@ -73,6 +84,10 @@ function setResult(){
     // resultImg.alt = point;
     // resultImg.classList.add('img-fluid');
     // imgDiv.appendChild(resultImg);
+    var sum = character[0]+character[1]+character[2];
+    var HustlerPer = character[0]/sum *100;
+    var HipsterPer = character[1]/sum *100;
+    var HackerPer = character[2]/sum *100;
     const HusRes = document.querySelector('.title percent0');
     const HipRes = document.querySelector('.title percent1');
     const HackRes = document.querySelector('.title percent2');
