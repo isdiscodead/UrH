@@ -48,6 +48,15 @@
             width: 70px;
             margin-right: 1rem;
         }
+        
+        .item-3h {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+        }
+
     </style>
 </head>
 <body>
@@ -84,12 +93,7 @@
     </section>
 
     <!-- Result -->
-    <section>
-
-    </section>
-
-    <!-- 3h -->
-    <section id="3h" style="display: none;">
+    <section id="result" style="display: none;">
         <img src="./image/balloon.png" alt="balloon" class="balloon"/>
         <article>
             <div>
@@ -123,9 +127,67 @@
                     <h3>Share with Team members</h3>
                 </button>
     
-                <button class="btn" id="open_3h">
+                <button class="btn" id="open_result">
                     <h2 class="btn-text">테스트 다시하기</h2>
                     <h3>Retry the Test</h3>
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <!-- 3h -->
+    <section id="3h" style="display: none;">
+        <img src="./image/balloon.png" alt="balloon" class="balloon"/>
+        <article>
+            <div>
+                <h2 class="title">3H를 들어보셨나요?</h2>
+                <h3 class="desc result-txt">
+                    3H는 스타트업 창업에 꼭 필요한 Hipster, Hustler, Hacker의 세 가지 인재상을 의미합니다.
+                    어쩌고 저쩌고오 음 뭐라 쓰지 
+                </h3>
+            </div>
+            <div>
+                <div class="item-3h">
+                    <div>
+                        <img class="icon" src="./image/hipster.png" alt="hipster-img">
+                        <span class="title">Hipster</span>
+                    </div>
+                    <div class="">
+                        어쩌구저쩌구 힙스터 설명해주기 
+                    </div>
+                </div>
+
+                <div class="item-3h">
+                    <div>
+                        <img class="icon" src="./image/hustler.png" alt="hipster-img">
+                        <span class="title">Hustler</span>
+                    </div>
+                    <div class="">
+                        어쩌구저쩌구뮤ㅠ
+                        ㅠㅠ 머라써야되냐
+                    </div>
+                </div>
+                <div class="item-3h">
+                    <div>
+                        <img class="icon" src="./image/hacker.png" alt="hipster-img">
+                        <span class="title">Hacker</span>
+                    </div>
+                    
+                    <div class="">
+                        결과 페이지 뭐라써요 ₩
+                        ~ 
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn">
+                    <h2 class="btn-text">팀원과 공유하기</h2>
+                    <h3>Share with Team members</h3>
+                </button>
+    
+                <button class="btn" id="open_3h">
+                    <h2 class="btn-text">테스트 시작하기</h2>
+                    <h3>Try the Test</h3>
                 </button>
             </div>
         </article>
@@ -148,6 +210,12 @@
     }
 
     document.getElementById("open_3h").onclick = function() {
+        window.scrollTo(0,0); // 맨 위로 스크롤 올리기 
+        document.getElementById("main").style.display = "none";
+        document.getElementById("3h").style.display = "flex";
+    }
+
+    document.getElementById("open_result").onclick = function() {
         window.scrollTo(0,0); // 맨 위로 스크롤 올리기 
         document.getElementById("main").style.display = "none";
         document.getElementById("3h").style.display = "flex";
