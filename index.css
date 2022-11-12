@@ -156,3 +156,98 @@ footer {
     margin-top: -1rem;
     text-align: center;
 }
+
+.balloon {
+    width: 100%;
+}
+
+#3h {
+    justify-content: center;
+    display:none;
+    margin-top: 0rem;
+}
+
+.result-txt {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.percent {
+    font-size: 2.5rem;
+}
+
+.icon {
+    width: 70px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-3h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.item-3h div {
+    display: flex;
+    align-items: center;
+}
+
+.aBox {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qBox {
+    margin-top: 0.8rem;
+    width: 70%;
+    white-space: pre-line;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.answerList {
+    white-space: pre-line;
+    line-height: 1.5rem;
+}
+
+.resultIntro {
+    margin: 1rem 0rem;
+    line-height: 1.5rem;
+}
+
+.resultName {
+    font-family: "title";
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.resultDesc {
+    line-height: 1.5rem;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
