@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>당신의 스타트업 H는?</title>
+
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
+    <!-- Main -->
+    <section>
+        <div class="title">
+            <h3 class="subtitle">"What's Your H?"</h3>
+            <h2>스타트업 팀 빌딩</h2>
+            <h2>3H 테스트</h2>
+        </div>
+    </section>
+
+    <!-- Test -->
+    <section>
+
+    </section>
+
+    <!-- Result -->
+    <section>
+
+    </section>
 </body>
+
+<script>
+    // 색 테마 설정
+    window.onload = function() {
+        let idx = Math.floor(Math.random() * 3);
+        let theme = ['yellow', 'pink', 'blue'];
+        document.documentElement.className = theme[idx];
+    }
+</script>
 </html>
