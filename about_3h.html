@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당신의 스타트업 H는?</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <style>
+        .balloon {
+            width: 100%;
+        }
+
+        #3h {
+            justify-content: center;
+            display:none;
+            margin-top: 0rem;
+        }
+
+        .result-txt {
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .percent {
+            font-size: 2.5rem;
+        }
+
+        .icon {
+            width: 70px;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main -->
+    <section id="main">
+        <div class="title">
+            <h3 class="subtitle">"What's Your H?"</h3>
+            <h2>스타트업 팀 빌딩</h2>
+            <h2>3H 테스트</h2>
+        </div>
+        <img src="./image/illust.png" class="main-img">
+        <article class="main-article">
+            <div class="desc">
+                좋은 창업팀은 3H( Hacker, Hustler, Hipster )에 해당하는 사람들이 적절히 섞여있다고 합니다.
+
+                내가 3H의 각 요소를 몇 퍼센트 정도 포함하고 있는지 알아볼 수 있는 테스트입니다.
+            </div>
+            
+            <button class="btn">
+                <h2 class="btn-text">팀원과 공유하기</h2>
+                <h3>Share with Team members</h3>
+            </button>
+
+            <button class="btn" id="open_3h">
+                <h2 class="btn-text">3H 알아보기</h2>
+                <h3>Find out What is 3H</h3>
+            </button>
+        </article>
+    </section>
+
+    <!-- Test -->
+    <section>
+
+    </section>
+
+    <!-- Result -->
+    <section>
+
+    </section>
+
+    <!-- 3h -->
+    <section id="3h" style="display: none;">
+        <img src="./image/balloon.png" alt="balloon" class="balloon"/>
+        <article>
+            <div>
+                <h2 class="title">당신은 'Hipster'의 재능이 돋보입니다 !</h2>
+                <h3 class="desc result-txt">어쩌고 저쩌고 상세 설명
+                    한줄 두줄
+                    몇 줄이나 필요할까요
+                    네줄이면 충분하겠지? 
+                </h3>
+            </div>
+            <div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hipster.png" alt="hipster-img">
+                    <span class="title">Hipster</span>
+                    <span class="title percent">42 %</span>
+                </div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hustler.png" alt="hipster-img">
+                    <span class="title">Hustler</span>
+                    <span class="title percent">42 %</span>
+                </div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hacker.png" alt="hipster-img">
+                    <span class="title">Hacker</span>
+                    <span class="title percent">42 %</span>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn">
+                    <h2 class="btn-text">팀원과 공유하기</h2>
+                    <h3>Share with Team members</h3>
+                </button>
+    
+                <button class="btn" id="open_3h">
+                    <h2 class="btn-text">테스트 다시하기</h2>
+                    <h3>Retry the Test</h3>
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        2022 충청톤 - 박은솔, 이지원, 장서영, 현지수
+        
+        All content is provided for fun and entertainment purposes only.
+        UnderDog Revolution All Rights Reserved. 2022.
+    </footer>
+</body>
+
+<script>
+    // 색 테마 설정
+    window.onload = function() {
+        let idx = Math.floor(Math.random() * 3);
+        let theme = ['yellow', 'pink', 'blue'];
+        document.documentElement.className = theme[idx];
+    }
+
+    document.getElementById("open_3h").onclick = function() {
+        window.scrollTo(0,0); // 맨 위로 스크롤 올리기 
+        document.getElementById("main").style.display = "none";
+        document.getElementById("3h").style.display = "flex";
+    }
+</script>
+</html>
