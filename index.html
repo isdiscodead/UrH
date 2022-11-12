@@ -29,7 +29,7 @@
                 <h3>Share with Team members</h3>
             </button>
 
-            <button class="btn">
+            <button class="btn" onclick="js:start()">
                 <h2 class="btn-text">3H 알아보기</h2>
                 <h3>Find out What is 3H</h3>
             </button>
@@ -37,13 +37,87 @@
     </section>
 
     <!-- Test -->
-    <section>
+    <section id="qna">
+        <article>
+            <div class="status mx-auto mt-5">
+                <div class="countStatus">
+    
+                </div>
+                <div class="statusBar">
+    
+                </div>
+    
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+    
+            </div>
+    
+            <div class="aBox">
+    
+            </div>
 
+        </article>
+        
+        
     </section>
 
     <!-- Result -->
-    <section>
+    <section id="result" style="display: none;">
+        <img src="./image/balloon.png" alt="balloon" class="balloon"/>
+        <article>
+            <div >
+                <div class="resultIntro">
+    
+                </div>
+                <div class="resultName">
+    
+                </div>
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 mx-auto">
 
+            </div>
+            <div class="resultDesc">
+                <div class="resultDescTitle1">
+    
+                </div>
+                <div class="resultDesc1">
+    
+                </div>
+                <div class="resultDescTitle2">
+    
+                </div>
+                <div class="resultDesc2">
+    
+                </div>
+            <div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hipster.png" alt="hipster-img">
+                    <span class="title">Hipster</span>
+                    <span class="title percent0"></span>
+                </div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hustler.png" alt="hipster-img">
+                    <span class="title">Hustler</span>
+                    <span class="title percent1"></span>
+                </div>
+                <div class="result-item">
+                    <img class="icon" src="./image/hacker.png" alt="hipster-img">
+                    <span class="title">Hacker</span>
+                    <span class="title percent2"></span>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn">
+                    <h2 class="btn-text">팀원과 공유하기</h2>
+                    <h3>Share with Team members</h3>
+                </button>
+    
+                <button class="btn" id="open_result">
+                    <h2 class="btn-text">테스트 다시하기</h2>
+                    <h3>Retry the Test</h3>
+                </button>
+            </div>
+        </article>
     </section>
 
     <footer>

@@ -4,6 +4,9 @@ const result = document.querySelector("#result");
 
 const endPoint = 20;
 const select = [0,0,0,0];
+const character ={Hustler:0, Hipster:0, Hacker:0};
+chara
+
 
 function addAnswer(andswerText, qIdx, idx){
     var a = document.querySelector(".aBox");
@@ -31,7 +34,7 @@ function addAnswer(andswerText, qIdx, idx){
             var target = qnaList[qIdx].a[idx].type;
 
             for(let i=0;i<target.length;i++){
-                select[target[i]]+= 1;
+                character[target[i]]+= 1;
             }
 
             for(let i=0;i<children.length;i++){
@@ -44,6 +47,10 @@ function addAnswer(andswerText, qIdx, idx){
 
 
 function calResult(){
+    var sum = character[0]+character[1]+character[2];
+    var HustlerPer = character[0]/sum *100;
+    var HipsterPer = character[1]/sum *100;
+    var HackerPer = character[2]/sum *100;
     var result = select.indexOf(Math.max(...select));
     return result; 
 
@@ -65,6 +72,15 @@ function setResult(){
     // resultImg.alt = point;
     // resultImg.classList.add('img-fluid');
     // imgDiv.appendChild(resultImg);
+    const HusRes = document.querySelector('.title percent0');
+    const HipRes = document.querySelector('.title percent1');
+    const HackRes = document.querySelector('.title percent2');
+    HusRes.innerHTML = HustlerPer +"%";
+    HipRes.innerHTML = HipsterPer +"%";
+    HackRes.innerHTML = HackerrPer +"%";
+
+
+
     
     const resultDesc1 = document.querySelector('.resultDesc1');
     const resultDescTitle1 = document.querySelector('.resultDescTitle1');
