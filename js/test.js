@@ -116,7 +116,7 @@ function goResult(){
         result.style.animation = "fadeIn 1s";
         setTimeout(() => {
             qna.style.display = "none";
-            result.style.display = "block";            
+            result.style.display = "flex";            
         }, 450);
     },450);
 
@@ -152,7 +152,7 @@ function start(){
         qna.style.animation = "fadeIn 1s";
         setTimeout(() => {
             main.style.display = "none";
-            qna.style.display = "block";            
+            qna.style.display = "flex";            
         }, 450);
         let qIdx = 0;
         goNext(qIdx);

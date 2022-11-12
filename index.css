@@ -198,13 +198,21 @@ footer {
     margin-bottom: 1rem;
 }
 
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .item-3h {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
 }
 
 .item-3h div {
@@ -250,4 +258,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    white-space: normal;
 }
