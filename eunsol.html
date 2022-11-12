@@ -7,6 +7,7 @@
     <title>당신의 스타트업 H는?</title>
 
     <link rel="stylesheet" href="./index.css">
+    
 </head>
 <body>
     <!-- Main -->
@@ -29,7 +30,7 @@
                 <h3>Share with Team members</h3>
             </button>
 
-            <button class="btn">
+            <button class="btn" onclick="js:start()">
                 <h2 class="btn-text">3H 알아보기</h2>
                 <h3>Find out What is 3H</h3>
             </button>
@@ -37,14 +38,65 @@
     </section>
 
     <!-- Test -->
-    <section>
+    <section id="qna">
+        <article>
+            <div class="status mx-auto mt-5">
+                <div class="countStatus">
+    
+                </div>
+                <div class="statusBar">
+    
+                </div>
+    
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+    
+            </div>
+    
+            <div class="aBox">
+    
+            </div>
 
+        </article>
+        
+        
     </section>
 
     <!-- Result -->
-    <section>
+    <section id="result" class="mx-auto my-5 py-5 px-4">
+        <h2 > 나의 결과는 ?!</h2>
+        <div >
+            <div class="resultIntro">
+
+            </div>
+            <div class="resultName">
+
+            </div>
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 mx-auto">
+
+        </div>
+        <div class="resultDesc">
+            <div class="resultDescTitle1">
+
+            </div>
+            <div class="resultDesc1">
+
+            </div>
+            <div class="resultDescTitle2">
+
+            </div>
+            <div class="resultDesc2">
+
+            </div>
+        </div>
+        <div>
+            <a href="javascript:setShare()"><img src="./img/icon-kakao.png" title="카카오톡" class="sharebtn_custom"/></a>
+        </div>
 
     </section>
+        <script src="./data.js"></script>
+    <script src="./js/test.js"></script>
 
     <footer>
         2022 충청톤 - 박은솔, 이지원, 장서영, 현지수

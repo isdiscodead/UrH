@@ -2,17 +2,15 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 
-const endPonint = 20;
-const select = {"Hustler" :0 ,"Hipster":0,"Hacker":0};
+const endPoint = 20;
+const select = [0,0,0,0];
 
 function addAnswer(andswerText, qIdx, idx){
     var a = document.querySelector(".aBox");
     var answer = document.createElement('button');
 
     answer.classList.add('answerList');
-    answer.classList.add('my-5');
-    answer.classList.add('py-3');
-    answer.classList.add('mx-auto');
+    answer.classList.add('btn');
     
     answer.classList.add('fadeIn');
 
@@ -59,14 +57,14 @@ function setResult(){
     const resultName = document.querySelector('.resultName');
     resultName.innerHTML = infoList[point].name;
 
-    var resultImg = document.createElement('img');
-    const imgDiv = document.querySelector("#resultImg");
-    var imgURL = 'img/image-' + point + '.png';
+    // var resultImg = document.createElement('img');
+    // const imgDiv = document.querySelector("#resultImg");
+    // var imgURL = 'img/image-' + point + '.png';
 
-    resultImg.src = imgURL;
-    resultImg.alt = point;
-    resultImg.classList.add('img-fluid');
-    imgDiv.appendChild(resultImg);
+    // resultImg.src = imgURL;
+    // resultImg.alt = point;
+    // resultImg.classList.add('img-fluid');
+    // imgDiv.appendChild(resultImg);
     
     const resultDesc1 = document.querySelector('.resultDesc1');
     const resultDescTitle1 = document.querySelector('.resultDescTitle1');
