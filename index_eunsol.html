@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Main -->
-    <section>
+    <section id = "main">
         <div class="title">
             <h3 class="subtitle">"What's Your H?"</h3>
             <h2>스타트업 팀 빌딩</h2>
@@ -24,7 +24,7 @@
                 내가 3H의 각 요소를 몇 퍼센트 정도 포함하고 있는지 알아볼 수 있는 테스트입니다.
             </div>
             
-            <button class="btn" id="btnKakao" onclick="fn_sendFB('kakaotalk');return false;" target="_self" title="카카오톡 공유">
+            <button class="btn">
                 <h2 class="btn-text">팀원과 공유하기</h2>
                 <h3>Share with Team members</h3>
             </button>
@@ -62,34 +62,4 @@
         document.documentElement.className = theme[idx];
     }
 </script>
-
-    // 카카오톡 공유하기
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-
-<script >
-    function fn_sendFB(sns) {
-    var thisUrl = document.URL;
-    var snsTitle = "What's Your H?";
-
-    if( sns == 'kakaotalk' ) {
-        Kakao.init('6724e41e677c737db431ab4303f1578b');
-
-        // 카카오링크 버튼 생성
-        Kakao.Link.createDefaultButton({
-            container: '#btnKakao',
-            objectType: 'feed',
-            content: {
-            title: "What's Your H?",
-            description: "스타트업 팀 빌딩 3H 테스트",
-            imageUrl: thisUrl,
-            link: {
-                mobileWebUrl: thisUrl,
-                webUrl: thisUrl
-            }
-            }
-        });
-    }}
-
-</script>
-
 </html>
