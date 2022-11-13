@@ -164,7 +164,7 @@ const qnaList = [
                 type: [1],
             },
             {
-                answer: "책상엔 트북만 있으면 되지!",
+                answer: "책상엔 노트북만 있으면 되지!",
                 type: [2],
             },
             {
