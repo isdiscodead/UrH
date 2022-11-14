@@ -8,3 +8,5 @@
 좋은 창업팀은 `3H(Hacker, Hustler, Hipster)`에 해당하는 사람들이 적절히 섞여있다고 합니다. 
 
 내가 3H의 각 요소를 몇 % 정도 포함하고 있는지 알아볼 수 있는 테스트입니다. 
+
+https://yourh.netlify.app/
